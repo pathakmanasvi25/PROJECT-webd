@@ -1,0 +1,126 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+ul{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(54,44,44);
+
+}
+    ul li{
+        colour:white;
+        list-style: none;
+        font-size:15px;
+    }
+    ul::before{
+        content: "";
+        background-color: black;
+        position:absolute;
+        height:150%;
+        width:100%;
+        z-index: -1;
+        opacity:4.2;
+
+    }
+    ul li a{
+        display:block;
+        padding:8px 15px;
+        border-radius:15px;
+        color:white;
+        text-decoration:none ;
+    }
+    ul li a:hover{
+        color:black;
+        background-color:rgb(220,202,177);
+    }
+    #home{
+        display:flex;
+        flex-direction:column;
+        height:500px;
+        padding:30px 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    #home::before{
+        content:"";
+        position:absolute;
+        background:url('./img444.jpg') no-repeat center center/cover;
+        height:100%;
+        width:100%;
+        z-index:-1;
+        opacity:1;
+    }
+    
+    #home p{
+        color:aliceblue;
+        text-align:center;
+        font-size:60px;
+        background-color: rgba(50, 32, 8, 0.388);
+        border-radius:20px;
+        margin-bottom: 0;
+        padding: 10px;
+    }
+        /* #home p:hover{
+            background-color: rgb(54,44,44);
+        } */
+   
+    #home p1{
+        color:aliceblue;
+        text-align:center;
+        font-size:37px;
+        border-radius: 20px;
+        background-color: rgba(50, 32, 8, 0.399);;
+        width: 120%;
+        padding: 20px;
+    }
+    /* #home p1:hover{
+        background-color:rgb(54,44,44);
+    } */
+   .btn{
+       color:aliceblue;
+       text-align:center;
+       font-size:32px;
+       border-radius:6px;
+       cursor:pointer;
+       padding:5px 18px;
+       margin:13px;
+       font-family:'Times New Roman', Times, serif;
+       background-color: rgb(54,44,44);
+       text-decoration: none;
+    }
+    .btn:hover{
+        background-color:rgb(208, 176, 132) ;
+        color: black;
+    }
+    .right{
+        position:absolute;
+        right:20px;
+        top:1px;
+       }
+    .button{
+        padding:5px 18px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+        color: white;
+        background-color: rgb(54,44,44);
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .button:hover{
+        color: black;
+        background-color: rgb(220,202,177);
+        padding:5px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    #welcome{
+        color: aliceblue;
+        text-align:center;
+        background-color:rgba(50, 32, 8, 0.399);;
+        border-radius:20px;
+        margin-bottom: 0;
+        padding: 10px;
+        font-size:45px;
+    }
