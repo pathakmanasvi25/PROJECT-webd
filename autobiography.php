@@ -1,3 +1,23 @@
+<?php
+session_start();
+ include("connection.php");
+ include("functions.php");
+  if($_SERVER['REQUEST_METHOD']=="POST")
+  {
+      $fav8=$_POST['fav8'];
+
+     }
+    if (!empty($fav8)) {
+        
+        $current_userid=$_SESSION['user_id'];
+        $query="update data set fav8='$fav8' where user_id=$current_userid";
+        mysqli_query($con, $query);
+        header("Location: autobiography.php");
+        die;
+
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -155,9 +175,9 @@
  <div class="home"><a class="ahome" href="./index.php">Home</a></div>
 <div class="cu"><a class="acu" href="./contactus.html">Contact Us</a></div>
 <div class="enter">
-  <form>
+  <form method="post">
     <label id="favbook">Your all time favourite book from this genre is :</label>
-    <input type="text" id="fav">
+    <input type="text" id="fav" name="fav8">
   </form>
 </div>
     <table class="content-table">

@@ -2,6 +2,11 @@
     margin:0px;
     padding:0px;
 }
+.hello{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    margin: 9px;
+}
 ul{
     display: flex;
     position: relative;
@@ -10,7 +15,7 @@ ul{
 
 }
     ul li{
-        colour:white;
+        color:white;
         list-style: none;
         font-size:15px;
     }
@@ -22,7 +27,6 @@ ul{
         width:100%;
         z-index: -1;
         opacity:4.2;
-
     }
     ul li a{
         display:block;
@@ -30,6 +34,7 @@ ul{
         border-radius:15px;
         color:white;
         text-decoration:none ;
+        font-size: 21px;
     }
     ul li a:hover{
         color:black;
@@ -46,7 +51,7 @@ ul{
     #home::before{
         content:"";
         position:absolute;
-        background:url('./img444.jpg') no-repeat center center/cover;
+        background:url('./img444.jpg') no-repeat fixed center/cover;
         height:100%;
         width:100%;
         z-index:-1;
@@ -54,30 +59,24 @@ ul{
     }
     
     #home p{
-        color:aliceblue;
+        color: aliceblue;
         text-align:center;
         font-size:60px;
-        background-color: rgba(50, 32, 8, 0.388);
+        background-color: rgb(50,32,8,0.388);
         border-radius:20px;
         margin-bottom: 0;
         padding: 10px;
     }
-        /* #home p:hover{
-            background-color: rgb(54,44,44);
-        } */
-   
+    
     #home p1{
         color:aliceblue;
         text-align:center;
         font-size:37px;
         border-radius: 20px;
-        background-color: rgba(50, 32, 8, 0.399);;
-        width: 120%;
+        background-color: rgb(50,32,8,0.388);
+        width: 105%;
         padding: 20px;
     }
-    /* #home p1:hover{
-        background-color:rgb(54,44,44);
-    } */
    .btn{
        color:aliceblue;
        text-align:center;
@@ -92,7 +91,7 @@ ul{
     }
     .btn:hover{
         background-color:rgb(208, 176, 132) ;
-        color: black;
+        color:black;
     }
     .right{
         position:absolute;
@@ -102,7 +101,7 @@ ul{
     .button{
         padding:5px 18px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 15px;
+        font-size: 21px;
         color: white;
         background-color: rgb(54,44,44);
         border-radius: 10px;
@@ -116,9 +115,9 @@ ul{
         cursor: pointer;
     }
     #welcome{
-        color: aliceblue;
         text-align:center;
-        background-color:rgba(50, 32, 8, 0.399);;
+        color:aliceblue;
+        background-color: rgb(50,32,8,0.399);
         border-radius:20px;
         margin-bottom: 0;
         padding: 10px;

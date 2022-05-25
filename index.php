@@ -14,34 +14,31 @@ $user_data=check_login($con);
     <link rel="stylesheet" href="home.css">
 </head>
 <body>   
-<!-- <a href="logout.php">Click here to Logout!</a> -->
-    <!-- /<h1>This is index Page</h1> -->
-    <!-- <p>Here we can put our all content</p> -->
-    
-     <!-- <br>Your Favourite Genere is  -->
-     
-    <div class="navbar">
+
+     <div class="navbar">
     
         <ul>
             <li class="items"><a href="./index.php">Home</a></li>
-            <li class="items"><a href="./our books.html">Our Books</a></li>
+            <li class="items"><a href="./books.html">Our Books</a></li>
+            <li class="items"><a href="./favourite.php">Your Favourites</a></li>
             <li class="items"><a href="./services.html">Services</a></li>
             <li class="items"><a href="./contactus.html">Contact Us</a></li>
+          
          </ul>
         <div class="right">
             <button class="button"> <a class="button" href="logout.php">Log Out</a></button>
         </div>
     </div>
     <div class="hello">
-    Hello , <?php echo $user_data['user_name'];
-   ?>
+        Hello , <?php echo $user_data['user_name'];
+        ?>
     </div>
 
     <section id="home">
         <span id="welcome">Welcome to our Library</span> 
         <p> The Cosmic Athenaeum</p>
         <p1>Dive into the ocean of books by becoming an exclusive member of our library</p1>
-        <button class="btn"><a href="./our books.html" class="btn">Explore</a></button>
+        <button class="btn"><a href="./books.html" class="btn">Explore</a></button>
     </section>
 </body>
 </html>

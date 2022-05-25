@@ -12,14 +12,14 @@ body{
   display: flex;
 }
 .title{
-  width: 70%;
-  margin-top: 10px;
-    margin: 10px auto;
-    text-align: center;
-    font-size: 50px;
-    background-color: rgb(220, 202, 177);
-    border-radius: 23px;
-    padding: 14px;
+  width: 100%;
+  margin: 28px auto;
+  text-align: center;
+  font-size: 49px;
+  background-color: rgb(220, 202, 177);
+  border-radius: 10px;
+  padding: 1px;
+
 }
 .gg{
   background-color: rgb(54, 44, 44);
@@ -38,8 +38,10 @@ body{
   border-radius:10px ;
   color: black;
 }
+
 .home1:hover{
-  color: #786c7a;
+  color: rgb(220, 202, 177);
+  background-color: rgb(113, 80, 80);
 }
 .genre{
   background: rgb(54, 44, 44);
@@ -95,7 +97,35 @@ body{
   height: 350px;
   border-radius: 22px;
   }
-
+  ul{
+    display: flex;
+    width: 25%;
+    margin: auto;
+    position: relative;
+    justify-content: center;
+    background-color: rgb(80, 57, 57);
+    border-radius: 10px;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+    ul li{
+        color:white;
+        list-style: none;
+        font-size:15px;
+    }
+    ul li a{
+        display:block;
+        padding:8px 15px;
+        border-radius:15px;
+        color:white;
+        text-decoration:none ;
+        font-size: 22px;
+    }
+    ul li a:hover{
+        color:black;
+        background-color:rgb(220,202,177);
+    }
+  
 @media screen and (min-width: 768px) {
   .gg {
     display: flex;
@@ -107,8 +137,6 @@ body{
 }
 @media screen and (min-width: 1170px) {
   .book-card {
-    flex: 0 0 calc(33.3333% - 1rem);
+    flex: 0 0 calc(31% - 1rem);
     
   } }
-
-  

@@ -65,7 +65,8 @@ body{
     color: black;
   }
   .home1:hover{
-    color: #786c7a;
+    color: rgb(220, 202, 177);
+    background-color: rgb(123, 89, 89);
   }
   h2{
       margin: auto;
