@@ -11,7 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     if (!empty($user_name) && !empty($password) && !is_numeric($user_name) && !empty($Contact_no) && !empty($Email) && !empty($genre)) {
         //save to database
         $user_id = random_num(10);
-        $query = "insert into data(user_id,user_name,password,Contact_no,Email,genre) values('$user_id','$user_name','$password','$Contact_no','$Email','$genre')";
+        $hash = password_hash($password, PASSWORD_DEFAULT);
+        $query = "insert into data(user_id,user_name,password,Contact_no,Email,genre) values('$user_id','$user_name','$hash','$Contact_no','$Email','$genre')";
         mysqli_query($con, $query);
         header("Location: loginbox.php");
         die;
