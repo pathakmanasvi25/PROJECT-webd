@@ -1,11 +1,12 @@
-# PROJECT-webd
+# PROJECT-WEBD
+## LIBRARAY MANAGEMENT
 
 Hyperetxt Troop team- Manasvi Pathak ; Pranay Pandey ; Ankush Sultaniya <br />
 We have created a website to advertise a hypothetically existing library and inviting our users to become an exclusive member of the library through our online services. <br />
 
 index.php + home.css = Home page; <br />
 signup.php= Sign up page; <br />
-loginbox.php= Login page; <br />
+loginbox.php= Login page; <br/>
 books.html + Ourbooks.css = Genre page containing nine different genres all of which are clickable; <br />
 classics.php =Classics genre ; <br />
 romance.php = Romance genre ; <br />
